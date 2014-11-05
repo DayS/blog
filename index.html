@@ -33,9 +33,9 @@ layout: default
 		"use strict";
 
 		$(document).ready(function () {
+			var $window = $(window);
+			var $image = $('.teaserimage-image');
 
-			var $window = $(window),
-					$image = $('.teaserimage-image');
 			$window.on('scroll', function () {
 				var top = $window.scrollTop();
 
@@ -47,9 +47,7 @@ layout: default
 						.css('opacity', 1 - Math.max(top / 700, 0));
 			});
 			$window.trigger('scroll');
-
 		});
-
 	}(jQuery));
 </script>
 
