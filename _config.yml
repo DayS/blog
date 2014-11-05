@@ -22,7 +22,7 @@ baseurl: ""
 
 # social icons and sharing options
 social:
-  - icon:	user
+  - icon:	book
     url:	http://dvilleneuve.fr
     desc:   Visit my website
     share_url:
