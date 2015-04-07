@@ -11,8 +11,11 @@ logo: "/assets/images/logo.jpg"
 # blog cover
 cover: "/assets/images/cover-home.jpg"
 
-name: 'Damien Villeneuve'
-author: 'Damien Villeneuve'
+# Author
+author:
+  name: 'Damien Villeneuve'
+  bio: 'Web and mobility engineer'
+  location: 'Nantes, France'
 author_image: "/assets/images/author.jpg"
 
 paginate:	5

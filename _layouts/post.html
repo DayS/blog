@@ -16,7 +16,7 @@
             <h1 class="post-title">{{ page.title }}</h1>
             <div class="cf post-meta-text">
               <div class="author-image" style="background-image: url({{ site.author_image }})">Blog Logo</div>
-              <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ site.author }}</h4>
+              <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ site.author.name }}</h4>
               on
               <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time>
               <!-- , tagged on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}} -->
@@ -52,16 +52,17 @@
         </section>
         <div class="bottom-teaser cf">
 		      <div class="isLeft">
-            <h5 class="featured"><span>Written by</span></h5>
             <section class="author">
-              <h4>{{ site.author }}</h4>
-              <p class="bio">{{author.bio}}</p>
+              <h4>{{ site.author.name }}</h4>
+              <p class="bio">{{ site.author.bio }}</p>
+              <p class="metadata">{{ site.author.location }}</p>
             </section>
           </div>
           {{/post}}
           <div class="isRight">
             <footer class="post-footer">
 				      <section class="share">
+                <h4>Share this post</h4>
                 {% for social in site.social %}
                 {% if social.share_url != null %}
                 <a class="icon-{{ social.icon }}" href="{{ social.share_url }}{{ social.share_title }}{{page.title | cgi_escape}}{{ social.share_link }}{{site.url}}{{page.id}}"
