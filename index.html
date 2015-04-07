@@ -13,9 +13,7 @@ layout: default
 	<a class="blog-logo" href="{{site.url}}" style="background-image: url('{{ site.logo }}')">{{ site.title }}</a>
 	{% endif %}
 	<h1 class="blog-title">{{ site.title }}</h1>
-
 	<h2 class="blog-description">{{ site.description }}</h2>
-
 	<div class="custom-links">
 		{% for social in site.social %}
 		<a class="social-icon icon-{{ social.icon }}" href="{{ social.url }}" title="{{ social.desc }}">
@@ -28,28 +26,6 @@ layout: default
 	</div>
 </header>
 
-<script>
-	(function ($) {
-		"use strict";
-
-		$(document).ready(function () {
-			var $window = $(window);
-			var $image = $('.teaserimage-image');
-
-			$window.on('scroll', function () {
-				var top = $window.scrollTop();
-
-				if (top < 0 || top > 1500) {
-					return;
-				}
-				$image
-						.css('transform', 'translate3d(0px, ' + top / 3 + 'px, 0px)')
-						.css('opacity', 1 - Math.max(top / 700, 0));
-			});
-			$window.trigger('scroll');
-		});
-	}(jQuery));
-</script>
 
 <main class="content" role="main">
 
@@ -70,7 +46,7 @@ layout: default
 					<time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
 					<!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
 				</div>
-				<div>
+			</div>
 		</article>
 		{% endfor %}
 	</div>
@@ -92,7 +68,7 @@ layout: default
 					<time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
 					<!--            <span class="post-tags-set">on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}}</span>-->
 				</div>
-				<div>
+			</div>
 		</article>
 		{% endfor %}
 	</div>
