@@ -7,11 +7,13 @@ tags: java wtf
 image: /assets/article_images/java-cover2.jpg
 ---
 I'm currently working on a big Spring/Hibernate project with a complex administration back-end.
-Everything was working fine until IntelliJ started crashing with no visible reasons. The only error I had was this weird message, just before my Mac also started going crazy :
+Everything was working fine until IntelliJ started crashing with no visible reasons.
+
+<!--more-->
+
+The only error I had was this weird message, just before my Mac also started going crazy :
 
 > Error=21, Too many open files in system
-
-{{ post.excerpt }}
 
 # Investigation
 

@@ -8,6 +8,8 @@ image: /assets/article_images/server-cover1.jpg
 ---
 I installed a Synology NAS at home some time ago. It works perfectly, but now I would like to securely open some services on the web.
 
+<!--more-->
+
 # Step 1: DynDNS
 
 In France, lots of ISP keeps providing dynamic IP ot their client. I already used services like [No-IP](http://no-ip.org) to access my NAS from the Internet, but I'm currently working on cleaning some paid services I don't really need.

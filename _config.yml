@@ -11,6 +11,8 @@ logo: "/assets/images/logo.jpg"
 # blog cover
 cover: "/assets/images/cover-home.jpg"
 
+excerpt_separator: <!--more-->
+
 # Author
 author:
   name: 'Damien Villeneuve'
