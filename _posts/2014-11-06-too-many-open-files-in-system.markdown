@@ -4,7 +4,7 @@ title:  "Too many open files in system"
 date:   2014-11-06 14:00:00
 categories: java
 tags: java wtf
-image: /assets/article_images/java-cover2.jpg
+image: /assets/article_images/mac-cover.jpg
 ---
 I'm currently working on a big Spring/Hibernate project with a complex administration back-end.
 Everything was working fine until IntelliJ started crashing with no visible reasons.
